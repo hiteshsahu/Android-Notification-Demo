@@ -12,6 +12,9 @@
 - Inbox Style
 - Messaging Style
 
+ ![Demo](./screens/type.png)
+
+
 ### Notification Listener Demo:
 -  On New ANimation Added
 -  On Notification removed
@@ -19,5 +22,5 @@
 -  Clear all Notifications
 
 
-  ![CostFunction](./assets/img/intro.gif)
+  ![Demo](./screens/demo.png)
 
