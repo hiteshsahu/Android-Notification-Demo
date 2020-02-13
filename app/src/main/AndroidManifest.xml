@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hiteshsahu.notificationlistener">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+
+        <service android:name=".notification.CustomNotificationListenerService"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+
+        <activity android:name=".NotificationDemoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.dummy.BigPictureSocialMainActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_big_text_main"
+            android:taskAffinity="">
+        </activity>
+
+<!--        <activity-->
+<!--            android:name=".activity.BigPictureSocialMainActivity"-->
+<!--            android:label="@string/title_activity_big_picture_main">-->
+<!--            <meta-data-->
+<!--                android:name="android.support.PARENT_ACTIVITY"-->
+<!--                android:value=".MainActivity"/>-->
+<!--        </activity>-->
+
+
+        <activity
+            android:name=".activity.dummy.InboxMainActivity"
+            android:label="@string/title_activity_inbox_main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NotificationDemoActivity"/>
+        </activity>
+
+        <activity
+            android:name=".activity.dummy.MessagingMainActivity"
+            android:label="@string/title_activity_messaging_main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NotificationDemoActivity"/>
+        </activity>
+
+        <service
+            android:name=".service.BigTextIntentService"
+            android:exported="false">
+        </service>
+
+        <service
+            android:name=".service.MessagingIntentService"
+            android:exported="false">
+        </service>
+
+        <service
+            android:name=".service.BigPictureSocialIntentService"
+            android:exported="false">
+        </service>
+    </application>
+
+</manifest>

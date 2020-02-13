@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Notification Listener</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="reply_label">Reply</string>
+    <string name="reply_name">Me</string>
+
+    <string name="title_activity_big_text_main">BigTextStyle Main Activity</string>
+    <string name="title_activity_big_picture_main">BigPictureStyle Main Activity</string>
+    <string name="title_activity_inbox_main">InboxStyle Main Activity</string>
+    <string name="title_activity_messaging_main">MessagingStyle Main Activity</string>
+
+    <string name="main_text_activity_big_text_main">
+        This Activity would handle the reminder app\'s functionality.
+        \n\nThe notification type for this example was the Big Text Style!
+    </string>
+    <string name="main_text_activity_big_picture_main">
+        This Activity would handle the social app\'s functionality for an individual post.
+        \n\nThe notification type for this example was the Big Picture Style!
+    </string>
+    <string name="main_text_activity_inbox_main">
+        This Activity would handle the email app\'s functionality for an email(s).
+        \n\nThe notification type for this example was the Inbox Style!
+    </string>
+    <string name="main_text_activity_messaging_main">
+        This Activity would handle the messaging app\'s functionality for a chat(s).
+        \n\nThe notification type for this example was the Messaging Style!
+    </string>
+</resources>
