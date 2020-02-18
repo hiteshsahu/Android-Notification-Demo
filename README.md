@@ -16,9 +16,9 @@
 
 
 ### Notification Listener Demo:
--  On New ANimation Added
+-  On New Notification Added
 -  On Notification removed
--  Fetch all current Notn
+-  Fetch all current Notification
 -  Clear all Notifications
 
 
